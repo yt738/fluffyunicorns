@@ -1,0 +1,149 @@
+
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);
+
+body {
+	background-color: #EDFFE0;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px !important;
+}
+
+//Header
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+section.module:last-child {
+	margin-bottom: 0;
+}
+
+
+ h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 50px;
+	text-align: center;
+	color:#FFC878;
+	font-weight: none;
+
+}
+
+h2 {
+	margin-bottom: 20px;
+	font-family: 'Montserrat', serif;
+	font-size: 14px;
+	text-align: center;
+
+}
+
+
+#logo {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+}
+
+//Navigation
+
+.nav {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	font-size: 10px;
+	background-color:#ffffff;
+}
+
+.nav ul {
+	list-style: none;
+	padding: 7px;
+	margin: 0px;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color:#ffffff;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 15px;
+
+}
+
+.nav ul li { 
+	display: inline-block;
+	flex-grow: 0;
+	text-align: center;
+	justify-content: center;
+}
+
+.nav ul li a { 
+	display: block;
+	padding: 10px 10px;
+	text-decoration: none;
+	color: #444;
+}
+.nav ul li a:hover {
+	background-color: #FFA99E;
+	opacity: 40%;
+	color: #ffffff;
+}
+
+@media (max-width:48.000em){
+	.example-header .container { width: 100%; }
+  	.nav ul { width: 100%; font-weight: normal; }
+  	.nav ul li { width: 50%; float: left; }
+  	.nav ul li:nth-of-type(odd) a { border-right: 1px solid #ccc; }
+  	.nav ul li a { padding: 8px 0px; border-bottom: 1px solid #ccc; display: block; }
+}
+
+
+
+#header {
+	display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
+
+
+#hero {
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+#parallax {
+	display: block;
+}
+
+#art-1 {
+	background-image: url('BG1.png');
+}
+
+.keyart_layer_parallax {
+	position: fixed;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+}
+
+#art-2 {
+	background-image: url('header2.png');
+}
+
+#container {
+	background: #ffffff;
+	max-width:100%;
+}
