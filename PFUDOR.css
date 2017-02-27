@@ -1,43 +1,58 @@
 
 @import url(https://fonts.googleapis.com/css?family=Sacramento);
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Museo+Sans);
 @import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
 
 body {
-	background-color: #EDFFE0;
+	/*background-color: #ffffff;*/
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Museo-Sans', sans-serif;
 	font-size: 12px !important;
 }
 
-//Header
+.title {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
 
 .container {
 	max-width: 960px;
 	margin: 0 auto;
 }
 
-section.module:last-child {
-	margin-bottom: 0;
-}
 
 
  h1 {
-	font-family: 'Sacramento', cursive;
-	font-size: 50px;
+	font-family: 'Playfair Display', serif;
+	font-size: 60px;
 	text-align: center;
-	color:#FFC878;
-	font-weight: none;
+	color:#000000;
+	letter-spacing: -3px;
+	padding-top: 10px;
 
-}
+	}
 
 h2 {
 	margin-bottom: 20px;
-	font-family: 'Montserrat', serif;
+	font-family: 'Playfair Display', serif;
 	font-size: 14px;
 	text-align: center;
+	color: #ffffff;
+	padding-top: 20px;
+	font-size: 40px;
 
+}
+
+h3 {
+	font-family: 'Museo-Sans', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #000000;
 }
 
 
@@ -54,13 +69,13 @@ h2 {
 	margin: 0 auto;
 	padding: 0;
 	display: flex;
-	font-size: 10px;
+	font-size: 11px;
 	background-color:#ffffff;
 }
 
 .nav ul {
 	list-style: none;
-	padding: 7px;
+	padding-top: 2px;
 	margin: 0px;
 	text-align: center;
 	margin: 0 auto;
@@ -68,9 +83,10 @@ h2 {
 	flex-direction: row;
 	justify-content: center;
 	background-color:#ffffff;
-	font-size: 11px;
-	font-weight: bold;
-	line-height: 15px;
+	font-size: 13px;
+	line-height: 14px;
+	text-transform: lowercase;
+	height: 2px;
 
 }
 
@@ -83,7 +99,7 @@ h2 {
 
 .nav ul li a { 
 	display: block;
-	padding: 10px 10px;
+	padding: 12px 5px;
 	text-decoration: none;
 	color: #444;
 }
@@ -100,7 +116,6 @@ h2 {
   	.nav ul li:nth-of-type(odd) a { border-right: 1px solid #ccc; }
   	.nav ul li a { padding: 8px 0px; border-bottom: 1px solid #ccc; display: block; }
 }
-
 
 
 #header {
@@ -120,30 +135,36 @@ h2 {
 	position: relative;
 }
 
-#parallax {
-	display: block;
+
+
+/*Parallax section*/
+#section-1 {
+    z-index: 1;
+    color: #fff;
+    height: 100vh;
+}
+/*Parallax background*/
+#section-1 .parallax-layer-back {
+    background: url('BG1.png')no-repeat center center fixed;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*Section with dummy content*/
+#section-2 {
+    z-index: 2;
+    position: relative;
+    background: #efded1;
+    width: 100%;
 }
 
-#art-1 {
-	background-image: url('BG1.png');
-}
-
-.keyart_layer_parallax {
-	position: fixed;
-}
-
-.keyart_layer {
-	background-position: bottom center;
-	background-size: auto 1038px;
-	background-repeat: repeat-x;
-	width: 100%;
-}
-
-#art-2 {
-	background-image: url('header2.png');
-}
-
-#container {
-	background: #ffffff;
-	max-width:100%;
+div.full-bg-img {
+	    background: url('BG1.png')no-repeat center center fixed;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
